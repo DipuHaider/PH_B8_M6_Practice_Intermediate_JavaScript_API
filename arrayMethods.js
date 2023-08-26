@@ -50,7 +50,7 @@
 // //array.forEach((element, index, mainArray)) => {})
 // fruits.forEach((item, index, arr) => console.log(item, index, arr));
 
-// FIND ################################ Returns an array
+// FIND ################################ Returns a value depending on condition, if not matched returns undefined
 // const fruits = ["mango", "banana", "berry"];
 // const find = (fruits) => {
 //   for (let item of fruits) {
@@ -65,6 +65,26 @@
 // console.log(x);
 
 //es6 find
-const fruits = ["mango", "banana", "berry"];
-const y = fruits.find((item) => item === "banana");
-console.log(y);
+// const fruits = ["mango", "banana", "berry"];
+// const y = fruits.find((item) => item === "banana");
+// console.log(y);
+
+// FILTER ################################ Returns all value in an array depending on condition, if not matched returns an empty array
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// const filter = (numbers) => {
+//   const result = [];
+
+//   for (let item of numbers) {
+//     if (item % 2 === 0) {
+//       result.push(item);
+//     }
+//   }
+//   return result;
+// };
+
+// const x = filter(numbers);
+// console.log(x);
+
+// // es6 filter
+// const y = numbers.filter((item) => item % 2 === 0);
+// console.log(y);
