@@ -88,3 +88,32 @@
 // // es6 filter
 // const y = numbers.filter((item) => item % 2 === 0);
 // console.log(y);
+
+// REDUCE ################################ Returns all value in an array depending on condition, if not matched returns an empty array
+const arr = [1, 2, 3, 4, 5];
+
+// previous + current = result
+/*
+    0   +   1   =   1
+    1   +   2   =   3
+    3   +   3   =   6
+    6   +   4   =   10
+    10   +   5   =   15
+*/
+// // const sum = arr.reduce((previous, current) => previous + current);
+// const sum = arr.reduce((previous, current) => previous + current, 0); // 0 is the initial value for addition
+// console.log(sum);
+
+// previous * current = result
+/*
+    1   *   1   =   1
+    1   *   2   =   2
+    2   *   3   =   6
+    6   *   4   =  24
+    24   *   5   =   120
+*/
+// // const sum = arr.reduce((previous, current) => previous * current);
+// const sum = arr.reduce((previous, current) => previous * current, 1); // 1 is the initial value for multiplication
+const initial = 10;
+const sum = arr.reduce((previous, current) => previous * current, initial); // 10 is the initial value for multiplication
+console.log(sum);
