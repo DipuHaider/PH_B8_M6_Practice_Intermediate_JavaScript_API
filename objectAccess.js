@@ -13,3 +13,6 @@ console.log(person["age"]);
 //if assigned in a variable, then accessing by property value
 const propertyName = "age";
 console.log(person[propertyName]);
+
+
+[2:37:00]
