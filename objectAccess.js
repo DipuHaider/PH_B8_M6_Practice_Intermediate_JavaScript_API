@@ -14,5 +14,30 @@ console.log(person["age"]);
 const propertyName = "age";
 console.log(person[propertyName]);
 
+const complexObject = {
+  id: 1,
+  name: "Main Object",
+  info: {
+    description: "This is a complex nested object",
+    author: {
+      firstName: "John",
+      lastName: "doe",
+    },
+  },
+  data: {
+    values: [10, 20, 30, 40],
+    settings: {
+      disabled: true,
+      maxItems: 5,
+    },
+  },
+};
 
-[2:37:00]
+console.log("name: ", complexObject.name);
+console.log("description: ", complexObject.info.description);
+console.log("Last Name: ", complexObject.info.author.lastName);
+console.log("indexed Values: ", complexObject.data.values[2]);
+console.log(
+  "Last Values: ",
+  complexObject.data.values[complexObject.data.values.length - 1]
+);
