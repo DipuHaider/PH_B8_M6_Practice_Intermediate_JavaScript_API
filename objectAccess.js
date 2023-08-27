@@ -41,3 +41,6 @@ console.log(
   "Last Values: ",
   complexObject.data.values[complexObject.data.values.length - 1]
 );
+
+//Optional chaining - if value is there then proceed , if not then stop
+console.log(complexObject?.contact?.phone.name);
