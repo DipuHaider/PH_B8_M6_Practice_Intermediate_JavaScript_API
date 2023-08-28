@@ -1,3 +1,4 @@
+//if we call a function inside a function parameter then its called a callback function
 const function1 = (a, b, callback) => {
   //   console.log(typeof callback);
   //const b = 10;
